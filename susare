@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="bs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+    <title>Mapex.doo - Sušare</title>
+    <link rel="icon" type="image/x-icon" href="https://cdn-icons-png.flaticon.com/512/2950/2950660.png">
+    <style>
+        * { box-sizing: border-box; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; padding: 0; background-color: #f2f7f2; color: #222; display: flex; flex-direction: column; min-height: 100vh; overflow-x: hidden; line-height: 1.5; }
+        .header { width: 100%; background: linear-gradient(135deg, #163018 0%, #244b27 100%); color: white; display: flex; flex-direction: column; justify-content: center; align-items: center; box-shadow: 0px 4px 8px rgba(0,0,0,0.2); padding: 25px 15px; text-align: center; }
+        .header h1 { margin: 0; font-size: clamp(22px, 4vw, 32px); letter-spacing: 1px; }
+        .header-subtitle { font-size: clamp(14px, 2.5vw, 17px); color: #a3c9a8; margin-top: 6px; display: block; max-width: 90%; }
+        .nav-menu { width: 100%; background-color: #2d5a27; padding: 0 10px; display: flex; justify-content: center; flex-wrap: wrap; position: sticky; top: 0; z-index: 100; box-shadow: 0 2px 4px rgba(0,0,0,0.15); }
+        .nav-menu a { color: white; font-weight: 600; text-decoration: none; font-size: 15px; padding: 14px 18px; text-align: center; }
+        .nav-menu a.active { background-color: #163018; border-bottom: 3px solid #a3c9a8; }
+        .main-container { display: flex; flex: 1; width: 100%; max-width: 1400px; margin: 0 auto; flex-direction: row; align-items: stretch; }
+        .sidebar-left, .sidebar-right { width: 22%; background-color: #e4efe4; padding: 20px; border-left: 1px solid #c8dec8; border-right: 1px solid #c8dec8; display: flex; flex-direction: column; gap: 12px; }
+        .sidebar-widget { background-color: #ffffff; border: 1px solid #c8dec8; border-radius: 6px; padding: 14px; box-shadow: 0 2px 4px rgba(0,0,0,0.04); }
+        .sidebar-widget h4 { margin: 0 0 10px 0; color: #1e3f20; border-bottom: 1px solid #d8e8d8; padding-bottom: 6px; font-size: 15px; }
+        .content-center { width: 56%; padding: 25px; background-color: #ffffff; box-shadow: 0 0 15px rgba(0,0,0,0.03); }
+        .section-block { margin-bottom: 40px; padding-bottom: 25px; }
+        h2 { color: #1e3f20; border-bottom: 2px solid #2d5a27; padding-bottom: 8px; margin-top: 0; font-size: clamp(20px, 3vw, 24px); }
+        .info-card { background-color: #f7fbf7; border-left: 4px solid #2d5a27; padding: 15px; margin-bottom: 15px; border-radius: 0 5px 5px 0; }
+        .footer { width: 100%; background-color: #163018; color: white; text-align: center; padding: 20px 15px; margin-top: auto; font-size: 14px; }
+        .footer p { margin: 4px 0; }
+        @media screen and (max-width: 1150px) {
+            .sidebar-left, .sidebar-right { width: 25%; padding: 15px; }
+            .content-center { width: 50%; padding: 20px; }
+        }
+        @media screen and (max-width: 900px) {
+            .main-container { flex-direction: column; }
+            .content-center { width: 100%; order: 1; padding: 20px 16px; }
+            .sidebar-left, .sidebar-right { width: 100%; border-left: none; border-right: none; border-top: 2px solid #c8dec8; padding: 16px; display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; }
+            .sidebar-left { order: 2; }
+            .sidebar-right { order: 3; }
+            .nav-menu a { padding: 10px 12px; font-size: 14px; }
+        }
+        @media screen and (max-width: 600px) {
+            .header { padding: 18px 12px; }
+            .nav-menu { display: grid; grid-template-columns: repeat(2, 1fr); padding: 0; }
+            .nav-menu a { padding: 12px 8px; font-size: 14px; border: 1px solid #244b27; }
+            .sidebar-left, .sidebar-right { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Mapex.doo</h1>
+        <span class="header-subtitle">Tradicionalna obrada, industrijsko sušenje i prodaja drveta</span>
+    </div>
+    <div class="nav-menu">
+        <a href="mapex_pocetna.html">Početna</a>
+        <a href="proizvodi.html">Proizvodi i klase</a>
+        <a href="susare.html" class="active">Sušare</a>
+        <a href="cjenovnik.html">Cjenovnik</a>
+        <a href="onama.html">O nama</a>
+        <a href="kontakt.html">Kontakt</a>
+    </div>
+    <div class="main-container">
+        <div class="sidebar-left">
+            <div class="sidebar-widget">
+                <h4>Kontrola vlažnosti</h4>
+                <p style="font-size: 13px; color: #333; margin: 0;">Kompjutersko sušenje smanjuje vlagu na <b>8% - 10%</b> za stolarsku građu, odnosno <b>14% - 16%</b> za građevinske elemente.</p>
+            </div>
+        </div>
+        <div class="content-center">
+            <div class="section-block">
+                <h2>Tehnologija sušenja i tehnički propisi</h2>
+                <p>Posedujemo 6 automatizovanih kondenzacionih i konvekcionih sušara ukupnog kapaciteta 450 m³ po ciklusu.</p>
+                <div class="info-card">
+                    <b>1. Kompjutersko praćenje vlage:</b> Senzori u realnom vremenu mjere vlažnost jezgra drveta i automatski prilagođavaju temperaturu i vlažnost vazduha u komori.
+                </div>
+                <div class="info-card">
+                    <b>2. Termička obrada (ISPM 15):</b> Vršimo obaveznu fitosanitarnu termičku obradu drvene ambalaže i paleta sa izdavanjem zvaničnog žiga i sertifikata za izvoz.
+                </div>
+                <div class="info-card">
+                    <b>3. Parenje bukve:</b> Specijalne parionice omogućavaju ujednačavanje boje bukove građe i smanjenje unutrašnjih naprezanja prije samog sušenja.
+                </div>
+            </div>
+        </div>
+        <div class="sidebar-right">
+            <div class="sidebar-widget">
+                <h4>Ekološki standardi</h4>
+                <p style="font-size: 13px; color: #333; margin: 0;">Cjelokupan sistem grijanja sušara koristi isključivo vlastitu biomasu bez štetnih emisija.</p>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <p><b>Mapex.doo</b> &copy; 2026. Sva prava zadržana</p>
+    </div>
+</body>
+</html>
